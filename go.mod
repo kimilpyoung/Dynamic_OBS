@@ -1,4 +1,4 @@
-module dynamicOBS
+module github.com/kimilpyoung/Dynamic_OBS
 
 go 1.13
 

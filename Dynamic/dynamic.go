@@ -48,21 +48,21 @@ type msgEnv struct {
 	SdkVersion    string `json:"sdkVersion"`
 }
 type Config struct {
-  account string
-  password string
+  Account string
+  Password string
 }
 
 func New(config Config, observer Observer) *MainD {
   dm := MainD{}
   dm.config = defaultConfig()
 
-  dm.config.credconfig.account = config.account
-  dm.config.credconfig.password = config.password
+  dm.config.credconfig.account = config.Account
+  dm.config.credconfig.password = config.Password
   dm.config.observer = observer
   return &dm
 }
 
-func (dm *MainD) startCast() error {
+func (dm *MainD) StartCast() error {
 	dm.started = true
 	err := dm.init()
 	if err != nil {
