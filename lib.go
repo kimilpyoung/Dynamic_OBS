@@ -3,5 +3,5 @@ import "C"
 import (
 	"fmt"
 	"unsafe"
-  "Dynamic/config.go"
+  "github.com/kimilpyoung/Dynamic_OBS/Dynamic"
 )
